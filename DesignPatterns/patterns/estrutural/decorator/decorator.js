@@ -21,7 +21,7 @@ class ICafe {
 // Classe Base
 class CafeBasico extends ICafe {
     preparar() {
-        return 'Café básico';
+        return 'Café simples';
     }
 
     preco() {
