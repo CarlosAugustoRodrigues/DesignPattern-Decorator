@@ -30,7 +30,7 @@ class CafeBasico extends ICafe {
 }
 
 // Decorator que adiciona leite ao café
-class Leite extends ICafe {
+class DecoratorLeite extends ICafe {
     constructor(cafe) {
         super()
         this.cafe = cafe;
@@ -46,7 +46,7 @@ class Leite extends ICafe {
 }
 
 // Decorator que adiciona chocolate ao café
-class Chocolate extends ICafe {
+class DecoratorChocolate extends ICafe {
     constructor(cafe) {
         super()
         this.cafe = cafe;
@@ -67,12 +67,12 @@ let meuCafe = new CafeBasico();
 console.log('Tipo: ' + meuCafe.preparar());
 console.log('Preço: R$' + meuCafe.preco());
 
-meuCafe = new Leite(meuCafe);
+meuCafe = new DecoratorLeite(meuCafe);
 
 console.log('Tipo: ' + meuCafe.preparar());
 console.log('Preço: R$' + meuCafe.preco());
 
-meuCafe = new Chocolate(meuCafe);
+meuCafe = new DecoratorChocolate(meuCafe);
 
 console.log('Tipo: ' + meuCafe.preparar());
 console.log('Preço: R$' + meuCafe.preco());
