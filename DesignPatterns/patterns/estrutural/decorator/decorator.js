@@ -63,16 +63,10 @@ class Chocolate extends ICafe {
 
 
 let meuCafe = new CafeBasico();
-
-console.log('Tipo: ' + meuCafe.preparar());
-console.log('Preço: R$' + meuCafe.preco());
+console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
 
 meuCafe = new Leite(meuCafe);
-
-console.log('Tipo: ' + meuCafe.preparar());
-console.log('Preço: R$' + meuCafe.preco());
+console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
 
 meuCafe = new Chocolate(meuCafe);
-
-console.log('Tipo: ' + meuCafe.preparar());
-console.log('Preço: R$' + meuCafe.preco());
+console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
