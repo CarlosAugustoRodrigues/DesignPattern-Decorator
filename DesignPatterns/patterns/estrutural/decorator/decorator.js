@@ -61,24 +61,11 @@ class DecoratorChocolate extends ICafe {
     }
 }
 
-
 let meuCafe = new CafeBasico();
 console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
 
-<<<<<<< HEAD
 meuCafe = new Leite(meuCafe);
 console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
 
 meuCafe = new Chocolate(meuCafe);
 console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
-=======
-meuCafe = new DecoratorLeite(meuCafe);
-
-console.log('Tipo: ' + meuCafe.preparar());
-console.log('Preço: R$' + meuCafe.preco());
-
-meuCafe = new DecoratorChocolate(meuCafe);
-
-console.log('Tipo: ' + meuCafe.preparar());
-console.log('Preço: R$' + meuCafe.preco());
->>>>>>> ab70d9f2ddff4a0db78289c5c6a4406aa8094871
