@@ -13,13 +13,13 @@
 
 
 // Interface para o café básico e decoradores
-class ICafe {
+class InterfaceCafe {
     preparar() {}
     preco() {}
 }
 
 // Classe Base
-class CafeBasico extends ICafe {
+class CafeBasico extends InterfaceCafe {
     preparar() {
         return 'Café simples';
     }
@@ -30,7 +30,7 @@ class CafeBasico extends ICafe {
 }
 
 // Decorator que adiciona leite ao café
-class DecoratorLeite extends ICafe {
+class DecoratorLeite extends InterfaceCafe {
     constructor(cafe) {
         super()
         this.cafe = cafe;
@@ -46,7 +46,7 @@ class DecoratorLeite extends ICafe {
 }
 
 // Decorator que adiciona chocolate ao café
-class DecoratorChocolate extends ICafe {
+class DecoratorChocolate extends InterfaceCafe {
     constructor(cafe) {
         super()
         this.cafe = cafe;
@@ -64,8 +64,8 @@ class DecoratorChocolate extends ICafe {
 let meuCafe = new CafeBasico();
 console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
 
-meuCafe = new Leite(meuCafe);
+meuCafe = new DecoratorLeite(meuCafe);
 console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
 
-meuCafe = new Chocolate(meuCafe);
+meuCafe = new DecoratorChocolate(meuCafe);
 console.log(`Tipo: ${meuCafe.preparar()} | Preço: R$${meuCafe.preco().toFixed(2)}`);
