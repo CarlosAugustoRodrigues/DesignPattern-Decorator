@@ -2,7 +2,7 @@
 
 <p>Decorator é um padrão de design estrutural que permite que você envolva um objeto com outros objetos, chamados de decorators, que fornecem funcionalidades adicionais, sem alterar a estrutura do próprio objeto.</p>
 <p>O Decorator é útil quando você precisa adicionar comportamentos a objetos de forma flexível e modular, sem criar subclasses para cada combinação possível de funcionalidades.<br/>
-Isso promove uns dos princípio SOLID, o 'Open-Closed', que diz: "Entidades de software devem estar aberto para extensão, mas fechado para modificação", pois você pode adicionar novos comportamentos sem alterar o código fonte.</p>
+Isso promove um dos princípio SOLID, o 'Open-Closed', que diz: "Entidades de software devem estar aberto para extensão, mas fechado para modificação", pois você pode adicionar novos comportamentos sem alterar o código fonte.</p>
 <h2>Diagrama de Classe</h2>
 <img src="./decorator.png">
 <br/>

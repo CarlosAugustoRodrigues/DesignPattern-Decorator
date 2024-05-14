@@ -8,7 +8,7 @@
 // Cada funcionalidade adicional é como um "decorator", que envolve o objeto base e adiciona a funcionalidade desejada.
 
 // O Decorator é útil quando você precisa adicionar comportamentos a objetos de forma flexível e modular, sem criar subclasses para cada combinação possível de funcionalidades.
-// Isso promove uns dos princípio SOLID, o 'Open-Closed', que diz: "Entidades de software devem estar aberto para extensão, mas fechado para modificação",
+// Isso promove um dos princípio SOLID, o 'Open-Closed', que diz: "Entidades de software devem estar aberto para extensão, mas fechado para modificação",
 // pois você pode adicionar novos comportamentos sem alterar o código fonte.
 
 
